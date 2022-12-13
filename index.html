@@ -6,35 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logoscealta.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/estilos.css">
     <title>SCE</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html"><img src="./images/logoscelight.png" alt="INICIO LOGO SCE"></a>
-                </li>
-                <li>
-                    <a href="./section/quienes-somos.html">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="./section/equipo.html">Equipo</a>
-                </li>
-                <li>
-                    <a href="./section/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./section/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="#pie">Redes</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bkc">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./images/logoscelight.png"
+                        alt="INICIO LOGO SCE"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="./section/quienes-somos.html">Quienes somos</a>
+                        <a class="nav-link active text-white" href="./section/equipo.html">Equipo</a>
+                        <a class="nav-link active text-white" href="./section/servicios.html">Servicios</a>
+                        <a class="nav-link active text-white" href="./section/contacto.html" tabindex="-1"
+                            aria-disabled="true">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main class="gridsIndex">
         <div class="primerTitulo">
             <h1>Somos Soluciones en Comercio Exterior</h1>
@@ -51,15 +53,17 @@
             <div class="animacion1">
                 <img src="./images/eglnlogo.jpg" alt="logo red egln">
             </div>
-        </div>  
+        </div>
         <div class="parrafo3">
-            <p>Es nuestro objetivo continuar siendo una empresa sólida y reconocida por nuestros clientes a nivel
+            <p class="parr3">Es nuestro objetivo continuar siendo una empresa sólida y reconocida por nuestros clientes a nivel
                 internacional y nacional. Sin dejar de lado nunca nuestro motor inicial, que es el contribuir al
                 desarrollo y
-                crecimiento de las empresas a las que brindamos nuestros servicios.</p>
+                crecimiento de las empresas a las que brindamos nuestros servicios. Somos expertos en transporte con alvance global y conocimiento local.
+                Sean cuales sean las necesidades de su negocio, comprendemos qué es importante para usted. Nuestro servicio es de excelencia, debido a que contamos con un equipo de personas debidamente capacitadas y entrenadas para satisfacer sus necesidades, optimizando sus operaciones de comercio internacional y nacional. </p>
             <img src="./images/acuerdo.jpg" alt="gente estrechando manos">
         </div>
     </main>
+
     <section>
         <div class="titulo2">
             <h1>Propuesta integral</h1>
@@ -67,7 +71,8 @@
                 Asesoramiento legal</p>
         </div>
     </section>
-    <footer id="pie">
+
+    <footer>
         <div class="footerImg">
             <div class="box1">
                 <a href="https://www.facebook.com/" target="_blank"><img src="./images/logofacebook.svg"
@@ -85,6 +90,9 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
