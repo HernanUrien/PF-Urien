@@ -1,0 +1,16 @@
+nav {
+    width: 80%;
+    margin: 0 auto;
+    .container-fluid {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+    }
+}
+
+.listaBenef {
+    list-style-type: none;
+}

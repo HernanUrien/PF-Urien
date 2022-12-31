@@ -1,0 +1,20 @@
+.box1, .box2{
+    transition-property: all;
+    transition-duration: 2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box1:hover, .box2:hover{
+    transform: scale(1.5);
+}
+
+.animacion1:hover{
+    animation: rotacion 2s;
+}
+
+@keyframes rotacion{
+    1%{
+        transform: rotate(360deg);
+    }
+}

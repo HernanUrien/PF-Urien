@@ -1,0 +1,32 @@
+/*Extend*/
+.titulos{
+    font-family: 'Poppins', sans-serif;
+    font-size: $sizeTitulos;
+    font-weight:bold;
+    text-align: center;
+    background: rgb(92,92,92);
+    background: linear-gradient(90deg, rgba(92,92,92,1) 0%, rgba(134,134,134,1) 18%, rgba(156,156,156,1) 38%, rgba(196,196,196,1) 57%, rgba(214,214,214,1) 77%, rgba(235,235,235,1) 95%);
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+
+.titulo1, .titul2, .titulo3, .titulo4, .titulo5, .titulo6, .titulo7, .titulo8, .titulo9{
+    @extend .titulos;
+}
+
+/*Mixin*/
+@mixin sizes ($width, $heigth){
+    height: $heigth;
+    width: $width;
+}
+
+.my_mixin{
+    @include sizes (80%, 600px);
+    border: 5px solid black;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
